@@ -13,7 +13,7 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     locale: "en-US",
-    baseUrl: "https://k-wolfy.github.io/Portfolio",
+    baseUrl: "https://scott.anketell.net",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {

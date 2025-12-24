@@ -1,6 +1,6 @@
-# Portfolio - Quartz 4 Site
+# Scott Anketell's Portfolio - Quartz 4 Site
 
-This is a portfolio and CV website built with [Quartz 4](https://quartz.jzhao.xyz/) that automatically syncs content from an Obsidian vault via GitHub Actions and deploys to Netlify.
+This is Scott Anketell's portfolio and CV website built with [Quartz 4](https://quartz.jzhao.xyz/) that automatically syncs content from an Obsidian vault via GitHub Actions and deploys to Netlify.
 
 ## 🚀 Features
 
@@ -29,8 +29,7 @@ Portfolio/
 1. **Content Source**: Your Obsidian Vault repository pushes content to this repository via GitHub Actions
 2. **Build Process**: GitHub Actions triggers when content is updated
 3. **Site Generation**: Quartz builds the static site from markdown files
-4. **Deployment**: The built site is deployed to GitHub Pages
-5. **Netlify Sync**: Netlify automatically syncs from GitHub Pages
+4. **Deployment**: The built site is deployed directly to Netlify
 
 ## 🛠️ Local Development
 
@@ -64,8 +63,7 @@ Content is managed in your Obsidian vault and automatically synced here. The mai
 
 The site is configured to:
 - Build automatically on pushes to the main branch
-- Deploy to GitHub Pages
-- Sync to Netlify for production hosting
+- Deploy directly to Netlify for production hosting
 
 ## 🔧 Customization
 

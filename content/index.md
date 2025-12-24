@@ -1,9 +1,7 @@
 ---
-title: "Scott Anketell"
+title: "Welcome to My Portfolio"
 description: "Welcome to My Portfolio I am Scott Anketell, a full-stack AI engineer specialising in prompt engineering, persona development, and cognitive architecture design."
 ---
-
-# Welcome to My Portfolio
 
 I am Scott Anketell, a full-stack AI engineer specialising in prompt engineering, persona development, and cognitive architecture design.
 

@@ -121,12 +121,10 @@ button.desktop-explorer {
     overscroll-behavior: contain;
 
     & li > a {
-      color: var(--dark);
-      opacity: 0.75;
+      color: var(--secondary);
       pointer-events: all;
 
       &.active {
-        opacity: 1;
         color: var(--tertiary);
       }
     }
@@ -188,7 +186,7 @@ button.desktop-explorer {
     & span {
       font-size: 0.95rem;
       display: inline-block;
-      color: var(--secondary);
+      color: var(--dark);
       font-weight: $semiBoldWeight;
       margin: 0;
       line-height: 1.5rem;

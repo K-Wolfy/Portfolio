@@ -24,4 +24,4 @@ I have 10+ years background in customer service management and technical trainin
 
 Each project prioritises clarity, defensibility, and operational precision.
 
-Please explore the portfolio to see detailed case studies, prompt engineering examples, and deployed applications.
+Please use the menu on the left to explore the portfolio, you will find detailed case studies, prompt engineering examples, and deployed applications.

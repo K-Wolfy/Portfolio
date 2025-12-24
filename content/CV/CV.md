@@ -1,11 +1,10 @@
 ---
 created: 2025-12-23T17:32
-updated: 2025-12-24T09:34
+updated: 2025-12-25T03:57
 publish: true
 permalink: /cv
 artefact:
   - CV
-title: Scott Anketell - CV
 ---
 # SCOTT ANKETELL
 

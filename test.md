@@ -1,10 +1,3 @@
----
-created: 2025-12-25T00:00
-updated: 2025-12-25T00:00
-publish: true
-title: Scott Anketell
----
-
 ## Welcome to My Portfolio
 
 I am Scott Anketell, a full-stack AI engineer specialising in prompt engineering, persona development, and cognitive architecture design.

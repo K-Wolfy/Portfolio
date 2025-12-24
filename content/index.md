@@ -2,7 +2,7 @@
 title: "Welcome to My Portfolio"
 ---
 
-I am Scott Anketell, a full-stack AI engineer specialising in prompt engineering, persona development, and cognitive architecture design.
+Thank you for visiting. This portfolio demonstrates work in prompt engineering, persona development, and cognitive architecture design for customer-facing applications.
 
 I build AI systems that communicate with precision and context-appropriate tone. My work focuses on linguistic persona engineering and agentic workflows. I design modular prompt architectures that function as deterministic logic layers, integrating natural language instructions with structural code.
 

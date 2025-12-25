@@ -67,10 +67,11 @@ iframe.pdf {
   box-shadow: none;
 }
 
-// Technical grid background (Kwadraat-blad Grid)
+// Crouwel Signal Red background for the entire page
 body {
-  background-image: radial-gradient(var(--lightgray) 0.5px, transparent 0.5px);
-  background-size: 24px 24px; // Mimics a modernist layout grid
+  background-color: #EF3340; // Crouwel Signal Red background
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 0.5px, transparent 0.5px);
+  background-size: 24px 24px; // Subtle grid overlay on red background
 }
 
 // Remove any remaining shadows from interactive elements
@@ -124,4 +125,42 @@ th, td {
 // Footer styling
 footer {
   border-radius: 0px;
+}
+
+// White content areas on red background for strong contrast (light mode)
+.page > #quartz-body {
+  & .sidebar.left {
+    background-color: var(--light); // White background
+  }
+  
+  & .sidebar.right {
+    background-color: var(--light); // White background
+  }
+  
+  & .page-header {
+    background-color: var(--light); // White background for header
+  }
+  
+  & .center > article {
+    background-color: var(--light); // White background for main content
+    padding: 2rem;
+    margin: 1rem;
+  }
+  
+  & footer {
+    background-color: var(--light); // White background for footer
+  }
+}
+
+// Dark mode adjustments - black content areas on red background
+@media (prefers-color-scheme: dark) {
+  .page > #quartz-body {
+    & .sidebar.left,
+    & .sidebar.right,
+    & .page-header,
+    & .center > article,
+    & footer {
+      background-color: var(--light); // Black background in dark mode
+    }
+  }
 }

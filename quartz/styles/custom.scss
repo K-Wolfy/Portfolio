@@ -131,6 +131,7 @@ footer {
 .page > #quartz-body {
   // Remove grid gaps to prevent red background showing through
   gap: 0;
+  min-height: 100vh; // Ensure page fills entire viewport height
   
   & .sidebar.left {
     background-color: var(--light); // White background
@@ -146,6 +147,7 @@ footer {
   
   & .center {
     background-color: var(--light); // White background for center area (removes red background)
+    min-height: 100vh; // Ensure center area fills vertical space
     
     & > article {
       background-color: transparent; // Transparent background for main content
@@ -156,6 +158,7 @@ footer {
   
   & footer {
     background-color: var(--light); // White background for footer
+    min-height: 100vh; // Ensure footer fills remaining vertical space
   }
 }
 

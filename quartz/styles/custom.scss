@@ -129,6 +129,9 @@ footer {
 
 // White content areas on red background for strong contrast (light mode)
 .page > #quartz-body {
+  // Remove grid gaps to prevent red background showing through
+  gap: 0;
+  
   & .sidebar.left {
     background-color: var(--light); // White background
   }
@@ -147,7 +150,7 @@ footer {
     & > article {
       background-color: transparent; // Transparent background for main content
       padding: 2rem;
-      margin: 1rem;
+      margin: 0; // Remove margin to prevent red background showing
     }
   }
   

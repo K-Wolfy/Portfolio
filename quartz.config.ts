@@ -16,42 +16,39 @@ const config: QuartzConfig = {
     baseUrl: "https://scott.anketell.net",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
+    analytics: {
+      provider: "plausible",
+    },
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: {
-          name: "Rubik",
-          weights: [400, 500, 700]
-        },
-        body: {
-          name: "Rubik",
-          weights: [400, 500]
-        },
+        header: "Inter",
+        body: "Inter",
         code: "JetBrains Mono",
       },
       colors: {
         lightMode: {
-          light: "#ffffff",
-          lightgray: "#e5e5e5",
-          gray: "#666666",
-          darkgray: "#000000",
-          dark: "#000000",
-          secondary: "#0047AB",
-          tertiary: "#000000",
-          highlight: "rgba(0, 71, 171, 0.1)",
-          textHighlight: "#0047AB88",
+          light: "#FFFFFF",       // Background: White
+          lightgray: "#E5E5E5",   // Grid/Borders: Very Light Grey
+          gray: "#808080",        // Secondary: Mid Grey
+          darkgray: "#000000",    // Body Text: Black
+          dark: "#000000",        // Headings: Black
+          secondary: "#EF3340",   // Primary Accent (Pantone 032 C)
+          tertiary: "#EF3340",    // Hover States (Pantone 032 C)
+          highlight: "rgba(239, 51, 64, 0.12)", // Red highlight tint
+          textHighlight: "#EF334033", // Red text highlight with transparency
         },
         darkMode: {
-          light: "#000000",
-          lightgray: "#333333",
-          gray: "#666666",
-          darkgray: "#ffffff",
-          dark: "#ffffff",
-          secondary: "#ed2100",
-          tertiary: "#ffffff",
-          highlight: "rgba(237, 33, 0, 0.1)",
-          textHighlight: "#ed210088",
+          light: "#000000",       // Background: Black
+          lightgray: "#262626",   // Grid/Borders: Dark Grey
+          gray: "#D1D1D1",        // Secondary: Light Grey
+          darkgray: "#FFFFFF",    // Body Text: White
+          dark: "#FFFFFF",        // Headings: White
+          secondary: "#EF3340",   // Primary Accent (Pantone 032 C)
+          tertiary: "#EF3340",    // Hover States (Pantone 032 C)
+          highlight: "rgba(239, 51, 64, 0.2)", // Red highlight tint
+          textHighlight: "#EF33404D", // Red text highlight with transparency
         },
       },
     },

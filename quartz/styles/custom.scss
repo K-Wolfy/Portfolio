@@ -1,3 +1,127 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// Wim Crouwel-inspired Swiss Design Styles
+
+// Modernist dividers and borders
+hr {
+  border: none;
+  border-top: 2px solid var(--darkgray); // Thick modernist dividers
+  margin: 2rem 0;
+}
+
+// Sharp, technical code styling - no rounded corners
+code {
+  background-color: var(--lightgray);
+  color: var(--dark);
+  border-radius: 0px; // Crouwel designs never used rounded corners
+}
+
+// Swiss typography for headers
+h1, h2, h3, h4 {
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  text-transform: uppercase; // Iconic exhibition poster look
+}
+
+// Remove all rounded corners for Swiss modernist aesthetic
+.text-highlight {
+  border-radius: 0px;
+}
+
+.internal {
+  border-radius: 0px;
+}
+
+blockquote {
+  border-radius: 0px;
+}
+
+figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+  border-radius: 0px;
+}
+
+pre {
+  border-radius: 0px;
+}
+
+code {
+  border-radius: 0px;
+}
+
+img {
+  border-radius: 0px;
+}
+
+audio,
+video {
+  border-radius: 0px;
+}
+
+.external-embed.youtube,
+iframe.pdf {
+  border-radius: 0px;
+}
+
+// Flat design - ensure no shadows
+.page {
+  box-shadow: none;
+}
+
+// Technical grid background (Kwadraat-blad Grid)
+body {
+  background-image: radial-gradient(var(--lightgray) 0.5px, transparent 0.5px);
+  background-size: 24px 24px; // Mimics a modernist layout grid
+}
+
+// Remove any remaining shadows from interactive elements
+a {
+  box-shadow: none;
+}
+
+input[type="checkbox"] {
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+// Ensure tables have sharp borders
+.table-container > table {
+  border-radius: 0px;
+}
+
+th, td {
+  border-radius: 0px;
+}
+
+// Popover and card styling - flat design
+.popover {
+  box-shadow: none;
+  border: 1px solid var(--lightgray);
+  border-radius: 0px;
+}
+
+// Search and other interactive elements - flat
+.search-result {
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+// Explorer component styling
+.explorer {
+  border-radius: 0px;
+}
+
+// TOC styling
+.toc {
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+// Graph styling
+.graph {
+  border-radius: 0px;
+}
+
+// Footer styling
+footer {
+  border-radius: 0px;
+}

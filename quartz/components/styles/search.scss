@@ -9,8 +9,8 @@
 
   & > .search-button {
     background-color: transparent;
-    border: 1px var(--lightgray) solid;
-    border-radius: 2px;
+    border: 2px var(--lightgray) solid;
+    border-radius: 0px;
     font-family: inherit;
     font-size: inherit;
     height: 2rem;
@@ -70,11 +70,10 @@
 
       & > * {
         width: 100%;
-        border-radius: 2px;
+        border-radius: 0px;
         background: var(--light);
-        box-shadow:
-          0 14px 50px rgba(27, 33, 48, 0.12),
-          0 10px 30px rgba(27, 33, 48, 0.16);
+        box-shadow: none;
+        border: 2px solid var(--lightgray);
         margin-bottom: 2em;
       }
 
@@ -129,7 +128,7 @@
 
         & > div {
           height: calc(75vh - 12vh);
-          border-radius: 2px;
+          border-radius: 0px;
         }
 
         @media all and ($mobile) {
@@ -148,7 +147,7 @@
 
         & .highlight {
           background: color-mix(in srgb, var(--tertiary) 60%, rgba(255, 255, 255, 0));
-          border-radius: 2px;
+          border-radius: 0px;
           scroll-margin-top: 2rem;
         }
 
@@ -218,7 +217,7 @@
             }
 
             & > ul > li > p {
-              border-radius: 2px;
+              border-radius: 0px;
               background-color: var(--highlight);
               padding: 0.2rem 0.4rem;
               margin: 0 0.1rem;

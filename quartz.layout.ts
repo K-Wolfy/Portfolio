@@ -25,7 +25,6 @@ export const defaultContentPageLayout: PageLayout = {
           grow: true,
         },
         { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
       ],
     }),
     Component.Explorer({ folderClickBehavior: "collapse", folderDefaultState: "open" }),

@@ -70,8 +70,62 @@ iframe.pdf {
 // Crouwel Signal Red background for the entire page
 body {
   background-color: #EF3340; // Crouwel Signal Red background
-  background-image: radial-gradient(rgba(255, 255, 255, 0.3) 0.5px, transparent 0.5px);
-  background-size: 24px 24px; // More visible technical grid overlay on red background
+  
+  // Multiple approaches for maximum browser compatibility
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(90deg, transparent 49.75%, rgba(255, 255, 255, 0.3) 49.75%, transparent 49.75%);
+    background-size: 24px 24px;
+    pointer-events: none;
+    z-index: -1;
+  }
+  
+  // Enhanced specificity and vendor prefixes
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.3) 0.5px, transparent 0.5px),
+    -webkit-radial-gradient(rgba(255, 255, 255, 0.3) 0.5px, transparent 0.5px),
+    -moz-radial-gradient(rgba(255, 255, 255, 0.3) 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
+  
+  // Ensure proper layering
+  position: relative;
+  z-index: 1;
+}
+// Crouwel Signal Red background for the entire page
+body {
+  background-color: #EF3340; // Crouwel Signal Red background
+  
+  // Multiple approaches for maximum browser compatibility
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: 
+      radial-gradient(rgba(255, 255, 255, 0.3) 0.5px, transparent 0.5px),
+      linear-gradient(90deg, transparent 49.75%, rgba(255, 255, 255, 0.3) 49.75%, transparent 49.75%);
+    background-size: 24px 24px;
+    pointer-events: none;
+    z-index: -1;
+  }
+  
+  // Enhanced specificity and vendor prefixes
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.3) 0.5px, transparent 0.5px),
+    -webkit-radial-gradient(rgba(255, 255, 255, 0.3) 0.5px, transparent 0.5px),
+    -moz-radial-gradient(rgba(255, 255, 255, 0.3) 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
+  
+  // Ensure proper layering
+  position: relative;
+  z-index: 1;
 }
 
 // Remove any remaining shadows from interactive elements

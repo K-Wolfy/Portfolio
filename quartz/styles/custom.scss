@@ -141,10 +141,14 @@ footer {
     background-color: var(--light); // White background for header
   }
   
-  & .center > article {
-    background-color: var(--light); // White background for main content
-    padding: 2rem;
-    margin: 1rem;
+  & .center {
+    background-color: var(--light); // White background for center area (removes red background)
+    
+    & > article {
+      background-color: transparent; // Transparent background for main content
+      padding: 2rem;
+      margin: 1rem;
+    }
   }
   
   & footer {
@@ -158,7 +162,7 @@ footer {
     & .sidebar.left,
     & .sidebar.right,
     & .page-header,
-    & .center > article,
+    & .center,
     & footer {
       background-color: var(--light); // Black background in dark mode
     }

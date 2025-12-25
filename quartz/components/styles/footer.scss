@@ -13,3 +13,26 @@ footer {
     margin-top: -1rem;
   }
 }
+
+.stealth-footer {
+  // Light theme: white text on white background
+  color: #FFFFFF;
+  background-color: #FFFFFF;
+  
+  // Dark theme: black text on black background
+  [data-theme="dark"] & {
+    color: #000000;
+    background-color: #000000;
+  }
+  
+  // Ensure it's not completely invisible to screen readers
+  opacity: 1;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}

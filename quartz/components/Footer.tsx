@@ -8,22 +8,20 @@ interface Options {
 }
 
 export default ((opts?: Options) => {
-  const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
+  const Footer: QuartzComponent = ({ displayClass, cfg, fileData }: QuartzComponentProps) => {
     const year = new Date().getFullYear()
     const links = opts?.links ?? []
+    
+    // Only show footer on the main index page
+    if (fileData.slug !== "index") {
+      return null
+    }
+    
     return (
-      <footer class={`${displayClass ?? ""}`}>
+      <footer class={`${displayClass ?? ""} stealth-footer`}>
         <p>
-          {i18n(cfg.locale).components.footer.createdWith}{" "}
-          <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
+          Swiss style visual architecture adapted from Wim Crouwel's 'New Alphabet' (1967). The construction of meaning through rigid systems.
         </p>
-        <ul>
-          {Object.entries(links).map(([text, link]) => (
-            <li>
-              <a href={link}>{text}</a>
-            </li>
-          ))}
-        </ul>
       </footer>
     )
   }
